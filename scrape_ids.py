@@ -4,7 +4,7 @@ import numpy
 from datetime import datetime
 
 def read_current_ids():
-    current_ids = numpy.genfromtxt('ids.txt')
+    current_ids = numpy.genfromtxt('data/ids.txt')
     
     return current_ids
 
@@ -38,7 +38,7 @@ def write_ids():
         print(f'{datetime.now().strftime("%H:%M:%S")}: {len(ids_clean)} new IDs scraped!')
         
     # write to file
-    with open('ids.txt','a') as f:
+    with open('data/ids.txt','a') as f:
         for i in ids_clean:
             f.write(str(i))
             f.write('\n')
@@ -46,10 +46,10 @@ def write_ids():
     f.close()
 
 if __name__=='__main__':
-	niter = 30
+	niter = 100
 	n = 0
 	while n < niter:
 	    n+=1
 	    print(f'n/nIter = {str(n)}/{str(niter)}')
 	    write_ids()
-	    time.sleep(300)
+	    time.sleep(30)
