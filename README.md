@@ -1,6 +1,10 @@
 # Super Animal Royale Data Exploration
 
-There's a popular Battle-Royale style video game on Steam called [Super Animal Royale](https://animalroyale.com/), which my friends and I enjoy. There are statistics tracked in the game, and I wanted some way to visualize my statistics. I put together some simple scripts which scrapes data from the Super Animal Royale database ([which itself is scraped here](https://royale.pet/)) and plots my own data, my best friend's data, and our data relative to some approximation of the population. 
+There's a popular Battle-Royale style video game on Steam called [Super Animal Royale](https://animalroyale.com/), which my friends and I enjoy. 
+
+There are statistics tracked in the game, and I wanted some way to visualize my statistics. I put together some simple scripts which scrapes data from the Super Animal Royale database ([which itself is scraped here](https://royale.pet/)) and plots my own data, my best friend's data, and our data relative to some approximation of the population. 
+
+* If you want to play around with the data I have scraped so far, take a look in `data/db.csv' which should have everything at last push. 
 
 ## Highlights
 
