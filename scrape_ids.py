@@ -46,10 +46,10 @@ def write_ids():
     f.close()
 
 if __name__=='__main__':
-	niter = 100
+	niter = 1000
 	n = 0
 	while n < niter:
 	    n+=1
 	    print(f'n/nIter = {str(n)}/{str(niter)}')
 	    write_ids()
-	    time.sleep(30)
+	    time.sleep(300)
